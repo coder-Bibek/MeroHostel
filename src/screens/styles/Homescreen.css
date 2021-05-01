@@ -1,0 +1,4 @@
+*:hover,*::after{
+    box-shadow: none !important;
+    outline: none;
+}
