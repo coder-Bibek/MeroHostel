@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Loginscreen.css";
-function Loginscreen() {
+function Registerscreen() {
   return (
     <div class="container main-container">
       <div class="card main-card p-3 mb-2 w-100 mx-1">
@@ -13,19 +12,29 @@ function Loginscreen() {
           </div>
           <div class="d-flex align-content-center flex-row">
             <i class="fa fa-user user-logo"></i>
+            <p class="form-label email-paragraph">Full Name</p>
+          </div>
+          <input
+            type="text"
+            className="form-control mb-3"
+            placeholder="eg. John Walker"
+          />
+          <div class="d-flex align-content-center flex-row">
+            <i class="fa fa-user user-logo"></i>
             <p class="form-label email-paragraph">Email</p>
           </div>
+         
           <input
             type="email"
             className="form-control mb-3"
-            placeholder="email"
+            placeholder="Email"
           />
           <div class="d-flex align-items-center flex-row">
             <i class="fa fa-lock mb-1 user-logo"></i>
             <p class="form-label pass-paragraph ">Password</p>
           </div>
-          <input type="password" className="form-control mb-2" placeholder="" />
-          <div class="form-check justify-content-center d-flex flex-row mb-3">
+          <input type="password" className="form-control mb-4" placeholder="password" />
+          <div class="form-check justify-content-start d-flex flex-row mb-4">
             <input
               class="form-check-input"
               type="checkbox"
@@ -33,10 +42,13 @@ function Loginscreen() {
               id="flexCheckDefault"
             />
             <label className="form-check-label mx-2" for="flexCheckDefault">
-              Remember me
+              I agree to all the <span className="text-primary" href="/">Terms</span> and <span className="text-primary" href="/">Conditions</span>
             </label>
           </div>
-        <Link to="/home">  <button className="btn btn-success w-100" >Login</button></Link>
+          <Link to="/home">
+            {" "}
+            <button className="btn btn-success w-100">Register</button>
+          </Link>
         </div>
       </div>
       <div class="d-flex justify-content-center">
@@ -46,11 +58,11 @@ function Loginscreen() {
       </div>
       <div class="d-flex justify-content-center">
         <label className="below-label">
-          Create a New Account? <a href="/registerme">Register Here</a>
+          Already have an Account? <a href="/">Login</a>
         </label>
       </div>
     </div>
   );
 }
 
-export default Loginscreen;
+export default Registerscreen;

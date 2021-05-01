@@ -1,0 +1,19 @@
+.hostel-card{
+ top: 85%;
+ left:50%;
+ transform: translate(-50%,-30%);
+ box-shadow: 0px 0px 3px black;
+}
+.main-row{
+    line-height:5rem;
+    height:5rem;
+    border-radius:2.5rem !important
+}
+.select-me{
+    height:3rem;
+}
+@media only screen and (max-width: 768px) {
+   .hostel-card{
+       display: none;
+   }
+}

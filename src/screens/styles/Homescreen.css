@@ -2,3 +2,6 @@
     box-shadow: none !important;
     outline: none;
 }
+@media only screen and (max-width: 600px) {
+   
+  }
